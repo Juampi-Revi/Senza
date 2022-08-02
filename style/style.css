@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+  font-size:62.5%
+}
 @font-face {
     font-family: 'Suisse Intl';
     src: url('../fonts/SuisseIntl-Book.otf') format('truetype');
@@ -17,10 +20,16 @@ main{
     height: 100vh;
     padding: 35px 40px;
     font-family: 'Suisse Intl';
+    justify-content: space-between;
 }
 .section1-senza{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
+}
+.section1-senza img{
+  width: 45%;
+  min-width: 270px;
 }
 .container-titulo1-senza{
     display: flex;
@@ -36,7 +45,7 @@ main{
 .subtitle-senza{
     font-style: normal;
     font-weight: 450;
-    font-size: 17.5821px;
+    font-size: 1.8rem;
     line-height: 120%;
     color: #262626;
     letter-spacing: -0.005em;
@@ -44,30 +53,31 @@ main{
 .section2-senza{
     display: flex;
     justify-content:space-between;
-    margin-top: 210px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .contactanos-senza{
     font-style: normal;
     font-weight: 450;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 120%;
     color: #262626;
 }
 .container-redes-senza{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .redireccion-redes{
     display: flex;
-    margin-right: 30px;
+    margin-right: 3rem;
     z-index: 10;
 }
 .redireccion-redes a{
     margin-right:7px;
     font-style: normal;
     font-weight: 450;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 120%;
     color: #262626;
     text-decoration: none;
@@ -75,10 +85,10 @@ main{
 .email{
     font-style: normal;
     font-weight: 450;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 120%;
     color: #262626;
-    margin-left:15px;
+    margin-left:1.5rem;
 }
 .container-slider{
     position: absolute;
@@ -125,3 +135,55 @@ main{
             animation: scroll 40s linear infinite;
     display: flex;
     width: calc(1440px *2);
+    }
+    @media screen and (max-width: 1065px) {
+      .section2-senza{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 7rem;
+      }
+      .contactanos-senza{
+        border-bottom: 2px solid #262626;
+        padding-bottom:0.35rem;
+        margin-bottom:1.8rem;
+        font-size: 1.88rem;
+      }
+      .redireccion-redes a{
+        margin-right: 6.4rem;
+        margin-bottom:1.8rem;
+        font-size: 1.8rem;
+      }
+      .container-redes-senza{
+        flex-direction: column;
+        justify-content:start;
+        align-items: start;
+      }
+      .container-redes-senza img{
+        display: none;
+      }
+      .email{
+        margin-left:0;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+      }
+    }
+    @media screen and (max-width: 758px){
+      .section1-senza{
+        flex-direction: column;
+      }
+      .container-titulo1-senza{
+        margin-top: 15rem;
+      }
+      main{
+        max-height: 700px;
+      }
+      .title-senza{
+        font-size:1.5rem
+      }
+      .subtitle-senza{
+        font-size:1.2rem
+      }
+    }
+    @media screen and (max-width:490px){
+      
+    }
