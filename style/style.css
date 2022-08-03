@@ -4,7 +4,8 @@
     margin: 0;
 }
 html{
-  font-size:62.5%
+  font-size:62.5%;
+  min-width: 360px;
 }
 @font-face {
     font-family: 'Suisse Intl';
