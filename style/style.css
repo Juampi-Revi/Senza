@@ -30,6 +30,8 @@ main{
 .section1-senza img{
   width: 45%;
   min-width: 270px;
+  max-height: 44.5rem;
+  max-width: 49.7rem;
 }
 .container-titulo1-senza{
     display: flex;
@@ -135,6 +137,8 @@ main{
             animation: scroll 40s linear infinite;
     display: flex;
     width: calc(1440px *2);
+    height: 14.5%;
+    margin-bottom: 8rem;
     }
     @media screen and (max-width: 1065px) {
       .section2-senza{
@@ -183,7 +187,7 @@ main{
       .subtitle-senza{
         font-size:1.2rem
       }
-    }
-    @media screen and (max-width:490px){
-      
+      .slider .slide-track {
+        height:10rem;
+      }
     }
